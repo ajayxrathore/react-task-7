@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Table container */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Table header */
+.user-table-head {
+  background-color: #36454F; /* dark gray */
+  color: #ffffff;
+}
+
+.user-table-th {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 2px solid #4b5563;
+}
+
+/* Table body rows */
+.user-table-body {
+  background-color: #f9fafb; /* light gray */
+}
+
+.user-table-row:nth-child(even) {
+  background-color: #f3f4f6; /* stripe effect */
+}
+
+.user-table-row:hover {
+  background-color: #e5e7eb;
+}
+
+/* Table cells */
+.user-table-td {
+  padding: 12px 15px;
+  text-align:left;
+  border-bottom: 1px solid #d1d5db;
+}
+
+/* Optional: make table responsive */
+@media (max-width: 768px) {
+  .user-table, .user-table th, .user-table td {
+    display: block;
+    width: 100%;
+  }
+  .user-table-row {
+    margin-bottom: 15px;
+  }
+  .user-table-th {
+    text-align: right;
+  }
+}
+/* Center the login form on screen */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6; /* light gray background */
+}
+
+/* Form styling */
+.login-form {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form title */
+.login-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827; /* dark gray */
+  margin-bottom: 10px;
+}
+
+/* Inputs */
+.login-input {
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.login-input:focus {
+  border-color: #2563eb; /* blue highlight */
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+}
+
+/* Button */
+.login-button {
+  padding: 12px;
+  background-color: #2563eb; /* blue */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Error message */
+.login-error {
+  color: #dc2626; /* red */
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
+}
+/* Container for admin page */
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation bar */
+.admin-nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background-color: #1e1e2f;
+  padding: 15px 20px;
+  border-bottom: 2px solid #444;
+}
+
+/* Nav links */
+.admin-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.admin-link:hover {
+  background-color: #444;
+}
+
+/* Active link styling (React Router v6 requires NavLink for this) */
+.admin-link.active {
+  background-color: #007bff;
+}
+
+/* Content area */
+.admin-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
